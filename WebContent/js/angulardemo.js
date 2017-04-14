@@ -17,15 +17,15 @@ app.controller("contactController",["$scope",function($scope){
 app.config(function($routeProvider){
 	$routeProvider
 	.when("/", {
-		templateUrl : "pages/home.html",
+		templateUrl : "./WebContent/pages/home/home.html",
 		controller :  "mainController"
 	})
 	.when("/about",{
-		templateUrl : "pages/about.html",
+		templateUrl : "./WebContent/pages/about/about.html",
 		controller: "aboutController"
 	})
 	.when("/contact",{
-		templateUrl: "contact.html",
+		templateUrl: "./WebContent/pages/contact/contact.html",
 		controller: "contactController"
 	});
 	
